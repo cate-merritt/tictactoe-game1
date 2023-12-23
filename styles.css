@@ -1,0 +1,96 @@
+/* Styling for body of page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(bg.png);
+}
+
+/* Styling for the main heading of the game */
+body h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for displaying whose turn it is */
+body h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for the overall container of the game */
+  .container {
+    text-align: center;
+}
+
+/* Styling for the Tic-Tac-Toe board */
+#board {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    vertical-align: center;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
+}
+
+/* Styling for individual cells in the Tic-Tac-Toe board */
+.cell {
+    background-color: white;
+    border: 1px, #A28F88;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color: brown;
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for cell hover effect */
+.cell:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+/* Styling for the restart game button */
+#restart {
+    font-weight: 600;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-family: "Courier New", Courier, monospace;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+
+/* Styling for hover effect on the restart button */
+#restart:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* Styling for the result alert */
+#result {
+    font-weight: 600;
+    font-size: 2rem;
+    color:brown;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    background-color:white;
+}
